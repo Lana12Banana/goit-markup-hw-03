@@ -1,0 +1,261 @@
+:root {
+    --title-text-color: #212121;
+    --description-text-color: #757575;
+    --white-color: #FFFFFF;
+    --accent-color: #2196F3;
+    --black-color: #000000;
+}
+
+body {
+    background-color: var(--white-color);
+    color: var(--title-text-color);
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+}
+
+/* чорний #212121; */
+
+/* сірий #757575 */
+
+/* білий #FFFFFF */
+
+/* акцент #2196F3 */ 
+
+/* другорядний колір фону #F5F4FA */
+
+/* акцентний колір фону #2F303A */
+
+.list {
+    list-style: none;
+}
+
+.logo {
+    font-family: Raleway, sans-serif;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+}
+
+.logo-web {
+    color: var(--accent-color);
+}
+
+.logo-studio {
+    color: var(--black-color);
+}
+
+.logo-studio-white {
+    color: var(--white-color);
+}
+
+/* Site nav */
+
+.site-nav a {
+    color: var(--title-text-color);
+    font-weight: 500;
+    line-height: 1.14;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus,
+.contacts-list .link:hover,
+.contacts-list .link:focus {
+color: var(--accent-color);
+}
+
+.contacts-item:hover,
+.contacts-item:focus {
+    color: var(--accent-color);
+}
+
+.contacts-list a {
+    color: var(--description-text-color);
+    font-weight: 500;
+    line-height: 1.14;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+}
+
+/* Hero */
+
+.main-title {
+    color: var(--white-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.page, .info {
+    background-color: #2F303A;
+}
+
+.advantages-title {
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.advantages-desc {
+    color: var(--description-text-color);
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.occupation-title, .team-title {
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+}
+
+.team-title{
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+}
+
+.team {
+    background-color: #F5F4FA;
+}
+
+.name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.workers {
+    background-color: var(--white-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.position {
+    color: var(--description-text-color);
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.title {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.category {
+    color: var(--description-text-color);
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+}
+
+.location {
+    color: var(--white-color);
+    font-style: normal;
+    line-height: 1.17;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+}
+
+.contacts-item {
+    font-style: normal;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.17;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+}
+
+/* Button */
+
+.button {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+}
+
+.buttons button {
+    background-color: #F5F4FA;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+}
+
+.buttons li :hover,
+.buttons li :focus {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.link-all {
+    width: 73px;
+    height: 38px;
+    left: 512px;
+    top: 174px;
+}
+
+.link-site {
+    width: 125px;
+    height: 38px;
+    left: 593px;
+    top: 174px;
+}
+
+.link-apps {
+    width: 112px;
+    height: 38px;
+    left: 726px;
+    top: 174px;
+}
+
+.link-design {
+    width: 103px;
+    height: 38px;
+    left: 846px;
+    top: 174px;
+}
+
+.link-marketing {
+    width: 130px;
+    height: 38px;
+    left: 957px;
+    top: 174px;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+ul .active {
+    color: var(--accent-color);
+}

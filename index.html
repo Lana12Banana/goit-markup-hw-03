@@ -7,13 +7,15 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css" >
     <title>Веб-студія</title>
 </head>
 <body>
+
     <!--Верхня лінія-->
    <header>
-    <nav>
+    <div class="container main-header">
     <a href="./index.html" class="logo">
         <span class="logo-web">Web</span><span class="logo-studio">Studio</span>
     </a>
@@ -23,12 +25,12 @@
         <li><a href="./portfolio.html" class="link">Портфоліо</a></li>
         <li><a href="#" class="link">Контакти</a></li>
     </ul>
-    </nav>
 
     <ul class="contacts-list list">
         <li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
         <li><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
     </ul>
+    </div>
    </header> 
    <main>
     <!--Шапка-->
@@ -39,6 +41,7 @@
 
    <!--Наші переваги-->
    <section class="advantages">
+    <div class="container">
     <h2 class="visually-hidden">Наші переваги</h2>
     <ul class="advantages-list list">
         <li>
@@ -58,10 +61,12 @@
             <p class="advantages-desc">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
         </li>
     </ul>
+    </div>
     </section>
 
     <!--Чим ми займаємося-->
-    <section class="occupation">
+    <section class="occupation no-padding">
+    <div class="container">
     <h2 class="occupation-title">Чим ми займаємося</h2>
     <ul class="work-list list">
         <li>
@@ -77,12 +82,13 @@
                 alt="Людина працює з палітрою кольорів на планшеті" width="370">
         </li>
     </ul>
+    </div>
    </section>
 
    <!--Наша команда-->
    <section class="team">
+    <div class="container">
     <h2 class="team-title">Наша команда</h2>
-
     <ul class="workers list">
         <li>
             <img src="./images/product_designer.jpg"
@@ -109,11 +115,13 @@
             <p class="position">UI Designer</p>
         </li>
     </ul>
+    </div>
    </section>
    </main>
 
 <!--Підвал-->
    <footer class="info">
+    <div class="container">
     <a href="./index.html" class="logo">
         <span class="logo-web">Web</span><span class="logo-studio-white">Studio</span>
     </a>
@@ -125,6 +133,7 @@
             <li><a href="tel:+380961111111" class="contacts-item">+38 096 111 11 11</a></li>
         </ul>
         </address>
+    </div>
    </footer>
 </body>
 </html>

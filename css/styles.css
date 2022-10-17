@@ -17,12 +17,6 @@ body {
     margin: 0;
 }
 
-.wrapper {
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
 .main {
     flex: 1 1 auto;
 }
@@ -72,7 +66,11 @@ h1,h2,h3,h4,h5,h6,p,ul {
 .logo-footer {
     display: block;
     margin-bottom: 20px;
-    margin-top: 60px;
+}
+
+.info {
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 /* Page header */
@@ -95,8 +93,7 @@ h1,h2,h3,h4,h5,h6,p,ul {
 
 /* Site nav */
 
-.advantages-list,
-.buttons {
+.advantages-list {
     display: flex;
 }
 
@@ -111,33 +108,33 @@ h1,h2,h3,h4,h5,h6,p,ul {
     margin-left: 50px;
 }
 
-.work-list li + li,
-.advantages-list li + li,
-.workers li + li {
+.work-list .work-list-item + .work-list-item,
+.advantages-list .advantages-item + .advantages-item,
+.workers .workers-item + .workers-item {
     margin-left: 30px;
 }
 
 .work-list {
     display: flex;
-    flex-wrap: wrap;
     margin-right: auto;
     margin-left: auto;
     width: 1170px;
+}
+
+.image {
+    display: block;
 }
 
 .workers {
     display: flex;
-    flex-wrap: wrap;
     margin-right: auto;
     margin-left: auto;
-    width: 1170px;
 }
 
-.workers img {
-    margin-bottom: 30px;
+.workers-info {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
-
-
 
 /*.site-nav li:not(:last-child) {
     margin-right: 50px;
@@ -167,6 +164,8 @@ color: var(--accent-color);
 }
 
 .contacts-list a {
+    margin-top: 32px;
+    margin-bottom: 32px;
     color: var(--description-text-color);
     font-weight: 500;
     line-height: 1.14;
@@ -180,7 +179,6 @@ color: var(--accent-color);
 
 .contacts-list {
     display: flex;
-    margin: auto
 }
 
 /* Hero */
@@ -193,6 +191,9 @@ color: var(--accent-color);
 .main-title {
     margin-top: 0;
     margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 696px;
     color: var(--white-color);
     font-weight: 900;
     font-size: 44px;
@@ -212,7 +213,7 @@ color: var(--accent-color);
 }
 
 
-section .no-padding {
+.section.no-padding {
     padding-top: 0;
     padding-bottom: 0;
 }
@@ -263,7 +264,7 @@ section .no-padding {
     letter-spacing: 0.03em;
 }
 
-.workers {
+.workers-item {
     background-color: var(--white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -271,7 +272,6 @@ section .no-padding {
 
 .position {
     margin-top: 0;
-    margin-bottom: 30px;
     color: var(--description-text-color);
     font-size: 16px;
     line-height: 1.18;
@@ -281,7 +281,6 @@ section .no-padding {
 
 .location {
     display: block;
-    margin-bottom: 9px;
     color: var(--white-color);
     font-style: normal;
     line-height: 1.17;
@@ -292,16 +291,11 @@ section .no-padding {
 .contacts-item {
     display: block;
     margin-top: 0;
-    margin-bottom: 9px;
     font-style: normal;
     color: rgba(255, 255, 255, 0.6);
     line-height: 1.17;
     text-decoration: none;
     letter-spacing: 0.03em;
-}
-
-.telephone {
-    margin-bottom: 60px;
 }
 
 .portfolio {
@@ -313,6 +307,9 @@ section .no-padding {
     width: 370px;
     margin-right: 30px;
     margin-bottom: 30px;
+    border-right: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
 }
 
 .portfolio-element:nth-child(3n) {
@@ -323,11 +320,7 @@ section .no-padding {
     margin-bottom: 0;
 }
 
-.portfolio-text {
-    margin-left: 24px;
-}
-
-.title {
+.title-portfolio {
     margin-top: 0;
     margin-bottom: 4px;
     font-size: 18px;
@@ -337,11 +330,22 @@ section .no-padding {
 
 .category {
     margin-top: 0;
-    margin-bottom: 20px;
     color: var(--description-text-color);
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
+}
+
+.portfolio-box {
+    padding: 20px 24px;
+}
+
+.contacts-footer {
+    margin-bottom: 9px;
+}
+
+.contacts-footer:last-child {
+    margin-bottom: 0;
 }
 
 /* Button */
@@ -365,6 +369,17 @@ section .no-padding {
     text-align: center;
 }
 
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.buttons .buttons-menu:not(:last-child) {
+    margin-right: 8px;
+}
+
 .buttons button {
     display: inline-block;
     border: 1px solid transparent;
@@ -385,6 +400,7 @@ section .no-padding {
     background-color: var(--accent-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
+
 .link-all {
     padding: 6px 25px;
     min-width: 73px;
@@ -441,10 +457,3 @@ section .no-padding {
 ul .active {
     color: var(--accent-color);
 }
-
-ul .current {
-    color: var(--white-color);
-    background-color: var(--accent-color);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-

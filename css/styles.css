@@ -206,7 +206,7 @@ color: var(--accent-color);
     background-color: var(--dark-bg-coolor);
 }
 
-section {
+.section {
     padding-top: 94px;
     padding-bottom: 94px;
 }
@@ -351,6 +351,7 @@ section .no-padding {
     border: 1px solid transparent;
     min-width: 216px;
     border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     padding: 10px 32px;
     background-color: var(--accent-color);
     color: var(--white-color);

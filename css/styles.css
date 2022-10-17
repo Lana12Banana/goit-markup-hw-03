@@ -69,6 +69,12 @@ h1,h2,h3,h4,h5,h6,p,ul {
     color: var(--white-color);
 }
 
+.logo-footer {
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 60px;
+}
+
 /* Page header */
 
 .main-header {
@@ -274,6 +280,32 @@ section .no-padding {
     letter-spacing: 0.03em;
 }
 
+.location {
+    display: block;
+    margin-top: 20 px;
+    margin-bottom: 9px;
+    color: var(--white-color);
+    font-style: normal;
+    line-height: 1.17;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+}
+
+.contacts-item {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 9px;
+    font-style: normal;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.17;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+}
+
+.telephone {
+    margin-bottom: 60px;
+}
+
 .portfolio {
     display: flex;
     flex-wrap: wrap;
@@ -311,30 +343,6 @@ section .no-padding {
     color: var(--description-text-color);
     font-size: 16px;
     line-height: 1.88;
-    letter-spacing: 0.03em;
-}
-
-.info {
-    display: block;
-}
-
-.location {
-    margin-top: 20 px;
-    margin-bottom: 9px;
-    color: var(--white-color);
-    font-style: normal;
-    line-height: 1.17;
-    text-decoration: none;
-    letter-spacing: 0.03em;
-}
-
-.contacts-item {
-    margin-top: 0;
-    margin-bottom: 9px;
-    font-style: normal;
-    color: rgba(255, 255, 255, 0.6);
-    line-height: 1.17;
-    text-decoration: none;
     letter-spacing: 0.03em;
 }
 

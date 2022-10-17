@@ -282,7 +282,6 @@ section .no-padding {
 
 .location {
     display: block;
-    margin-top: 20 px;
     margin-bottom: 9px;
     color: var(--white-color);
     font-style: normal;
